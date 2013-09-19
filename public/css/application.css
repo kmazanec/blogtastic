@@ -1,0 +1,19 @@
+.container {
+  margin: 20px auto;
+  width: 700px;
+  padding: 0px 20px 20px 20px;
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+.nav {
+  float: right;
+  width: 100px;
+}
+
+.posts_container {
+  width: 600px;
+}
