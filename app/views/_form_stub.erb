@@ -1,0 +1,15 @@
+<div class="field">
+  <label for="title">Title: </label>
+  <input id="title" type="text" name="post[title]" value="<%= @post.try(:title)%>">
+</div>
+<div class="field">
+  <label for="content">Content: </label>
+  <textarea id="content" name="post[content]" rows=12><%= @post.try(:content)%></textarea>
+</div>
+<div class="field">
+  <label for="tags">Tags (sep by , ): </label>
+  <input id="tags" type="text" name="tags" value="<%= @post.try(:tags_as_string)%>">
+</div>
+<div class="field">
+  <input type="submit">
+</div>
