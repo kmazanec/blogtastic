@@ -12,6 +12,6 @@ class Post < ActiveRecord::Base
   def tags_as_string
     self.tags.map do |tag|
       tag.name
-    end.join(', ')t
+    end.join(', ')
   end
 end

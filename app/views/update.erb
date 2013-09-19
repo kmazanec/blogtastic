@@ -1,6 +1,6 @@
 <div class="form">
   <h3>Update Post</h3>
-  <form action="/update" method="post">
+  <form action="/update/<%= @post.id %>" method="post">
     <%= erb :_form_stub, layout: false %>
   </form>
 </div>

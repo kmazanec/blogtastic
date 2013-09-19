@@ -35,7 +35,7 @@ post '/update/:id' do
       puts e.message
     end
   end
-
+  redirect to("/posts/#{@post.id}")
 end
 
 post '/create' do
