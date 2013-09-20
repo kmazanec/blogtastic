@@ -1,6 +1,6 @@
 <div class="post">
   <h3><a href="/posts/<%=@post.id%>"><%= @post.title %></a></h3>
-  <span><%= @post.short_date %></span>
+  <div class="date"><%= @post.short_date %></div>
   <content>
     <p><%= @post.content %></p>
   </content>
@@ -9,7 +9,7 @@
   <% if @post.tags.any? %>
     <ul>
       <% @post.tags.each do |tag| %>
-        <li><%= tag.name %></li>
+        <li><a href="/tags/<%=tag.id%>">#<%= tag.name %></a></li>
       <% end %>
     </ul>
   <% end %>

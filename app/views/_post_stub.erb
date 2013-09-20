@@ -1,11 +1,11 @@
-<div class="post">
+<div class="post clearfix">
   <h3><a href="/posts/<%=@post.id%>"><%= @post.title %></a></h3>
-  <span><%= @post.short_date %></span>
-  <a href="/posts/<%=@post.id%>">See more...</a>
+  <div class="date"><%= @post.short_date %></div>
+  <div class="post_link"><a href="/posts/<%=@post.id%>">See more...</a></div>
   <% if @post.tags.any? %>
     <ul>
       <% @post.tags.each do |tag| %>
-        <li><%= tag.name %></li>
+        <li><a href="/tags/<%=tag.id%>">#<%= tag.name %></a></li>
       <% end %>
     </ul>
   <% end %>

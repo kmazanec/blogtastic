@@ -8,6 +8,7 @@
   -moz-box-shadow: 3px 3px 2px #bbb;
   -webkit-box-shadow: 5px 3px 2px #bbb;
   box-shadow: 3px 3px 2px #bbb;
+  opacity: 0.9;
 }
 .top_nav {
   margin: 0 auto;
@@ -43,6 +44,7 @@
 .add_new:hover {
   background: #333;
   color: white;
+  box-shadow:inset 3px 3px 2px #222;
 }
 
 .add_new a {
@@ -87,12 +89,73 @@ th {
   width: 100px;
 }
 
+.tags ul {
+  list-style: none;
+  padding: 0 10px;
+  text-align: right;
+}
+
+.tags li {
+  margin: 6px 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.tags li a {
+  text-decoration: none;
+  color: black;
+}
+
+.tags li:hover {
+  background: #eee;
+  text-decoration: underline;
+}
+
 .posts_container {
   width: 600px;
 }
 
 .post {
   border-bottom: 1px dotted #333;
+  padding: 10px 0;
+  margin: 0;
+  float: left;
+  width: 550px;
+}
+
+.post h3 {
+  font-size: 16px;
+  margin: 0;
+}
+.post h3 a {
+  text-decoration: none;
+  color: black;
+}
+.post h3 a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.date {
+  float: right;
+}
+
+.post_link {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.post ul {
+  list-style: none;
+  margin: 0;
+  float: left;
+  padding: 0;
+}
+
+.post ul li {
+  font-size: 12px;
+  float: left;
+  margin: 5px 10px 5px 0;
 }
 
 .bottom_nav_container {
@@ -105,12 +168,19 @@ th {
   -moz-box-shadow: 3px 3px 2px #bbb;
   -webkit-box-shadow: 5px 3px 2px #bbb;
   box-shadow: 3px 3px 2px #bbb;
+  opacity: 0.9;
 }
 .bottom_nav {
   margin: 0 auto;
-  height: 30px;
-  padding: 10px;
+  height: 10px;
+  padding: 4px;
   width: 700px;
+}
+
+.bottom_nav p {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .bottom_nav ul {
@@ -124,3 +194,13 @@ th {
   margin: 5px 20px;
 }
 
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
